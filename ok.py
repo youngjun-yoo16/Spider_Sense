@@ -30,7 +30,7 @@ def get_json_data(json):
 
 def main(url_json):
     json = get_jsonparsed_data(url_json)
-    get_json_data(json)
+    return get_json_data(json)
 
 
 

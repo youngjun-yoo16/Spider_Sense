@@ -67,8 +67,8 @@ class FrequencySummarizer:
     return text
 
   def main(self, url):
-    text = self.getText(self, url)
-    return self.summarize(self, text, 5)
+    text = self.getText(self, "https://checkyourfact.com/2020/10/06/fact-check-dwayne-johnson-flush-turd-donald-trump-shirt/")
+    print(self.summarize(self, text, 5))
 
 
 

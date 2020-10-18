@@ -177,3 +177,17 @@ a:hover {
     top: 800px;
     margin-left: 450px;
 }
+
+.suname {
+    font-family: animosabld;
+    position:absolute;
+    top: 1000px;
+    margin-left: 450px;
+}
+
+.sudescription {
+    font-family: animosalgt;
+    position:absolute;
+    top: 1040px;
+    margin-left: 450px;
+}

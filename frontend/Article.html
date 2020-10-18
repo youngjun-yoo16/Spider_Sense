@@ -2,37 +2,37 @@
 <html>
     <head>
         <title>Fact Checker</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         
-        <img class = "logo" src="images/Logo.png" alt="Team logo" width= 50px/>
+        <img class = "logo" src="img/Logo.png" alt="Team logo" width= 50px/>
             <p class="teamname">JASS</p>
 
         <nav class="navbar">
-            <a href="Sentence.html" class="link" >Claims</a>
-            <a href="Article.html" class="link" target="blank">Article</a>
-            <a href="About.html" class="link" target="blank">About</a>
+            <a href="views/Sentence.html" class="link" >Sentence</a>
+            <a href="views/Article.html" class="link" target="blank">Article</a>
+            <a href="views/About.html" class="link" target="blank">About</a>
         </nav>
 
         <div class="box1">
-            <h1 id= "header">Article Summarizer</h1>
+            <h1 id= "header">Article Checker</h1>
         </div>
 
         <div>
             <form method="GET">
-                <input class="inputbox" type="text" name="input" id="input" placeholder="Input a URL..." row=1><br/>
+                <input class="inputbox" type="text" name="input" id="input" placeholder="Fact or fiction?" row=1><br/>
                 <span id="result"></span>
                 <br/>
-                <input class="btn" type="button" value="Summarize!" onclick=myurl()>
+                <input class="btn" type="button" value="Fact Check!" onclick=myurl()>
             </form>
         </div>
     
         
         <script>
             function myurl() {
-                window.location.href = "Summary.html";
+                document.getElementById("result").innerHTML = createURL(document.getElementById("input").value);
             }
         </script>
 
@@ -42,10 +42,20 @@
             </p>
         </div>
 
+        <div class="box2">
+            <p class = "paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur tenetur ratione error repudiandae magnam. Fugit adipisci perspiciatis nihil culpa saepe assumenda dolorem excepturi, iste aliquam cupiditate alias amet itaque quisquam.
+            </p>
         </div>
 
-        <div class="box4">
-            
+        <div class="block">
+            <h3>Article 1</h3>
+            <p>fillerfillerfillerfillerfillerfillerfiller</p>
+        </div>
+
+        <div class="block">
+            <h3>Article 2</h3>
+            <p>fillerfillerfillerfillerfillerfillerfiller</p>
         </div>
     </body>
 </html>

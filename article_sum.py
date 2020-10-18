@@ -58,7 +58,7 @@ class FrequencySummarizer:
 
   def _rank(self, ranking, n):
     """ return the first n sentences with highest ranking """
-    return nlargest(n, ranking, key=ranking.get)
+    print(nlargest(n, ranking, key=ranking.get))
 
   def getText(self, url):
     page = requests.get(url)

@@ -223,3 +223,31 @@ a:hover {
     float: left;
     width: 50%;
 }
+
+.box4 {
+    position:absolute;
+    font-family: animosalgt;
+    background-color: #F7F4EA;
+    padding-top: 20px;
+    height: 50px;
+    width: 100%;
+    margin-right: 100px;
+    text-align: right;
+    z-index: 1;
+    word-spacing: 1.6em;
+    top: 1000px;
+}
+
+.box5 {
+    position:absolute;
+    font-family: animosalgt;
+    background-color: #F7F4EA;
+    padding-top: 20px;
+    height: 50px;
+    width: 100%;
+    margin-right: 100px;
+    text-align: right;
+    z-index: 1;
+    word-spacing: 1.6em;
+    top: 1300px;
+}

@@ -4,7 +4,7 @@ function get(search) {
 
 
 function createURL() {
-    var p1 = "https://factchecktools.googleapis.com/v1alpha1/claims:search?query=";
+    var p1 = "https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-US&pageSize=3&query=";
     var p2 = "&key=AIzaSyC-PX-31ru9Y3O4RCKOwloQplLgJ2LTCl8";
     
     var res = document.getElementById("variable").value.toLowerCase();

@@ -6,7 +6,6 @@
     </head>
 
     <body>
-        
         <img class = "logo" src="images/Logo.png" alt="Team logo" width= 50px/>
             <p class="teamname">JASS</p>
 
@@ -14,26 +13,6 @@
             <a href="Sentence.html" class="link" >Claims</a>
             <a href="About.html" class="link" target="blank">About</a>
         </nav>
-
-        <div class="box1">
-            <h1 id= "header">Claim Generator</h1>
-        </div>
-
-        <div>
-            <form method="GET">
-                <input class="inputbox" type="text" name="input" id="input" placeholder="Enter a topic..." row=1><br/>
-                <span id="result"></span>
-                <br/>
-                <input class = "btn" type="button" value="Generate!" onclick=myurl()>
-            </form>
-        </div>
-    
-        
-        <script>
-            function myurl() {
-                document.getElementById("result").innerHTML = createURL(document.getElementById("input").value);
-            }
-        </script>
 
         <div class="box2">
             <p class="paragraph">

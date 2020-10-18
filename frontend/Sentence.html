@@ -24,15 +24,45 @@
                 <input class="inputbox" type="text" name="input" id="input" placeholder="Enter a topic..." row=1><br/>
                 <span id="result"></span>
                 <br/>
-                <input class = "btn" type="button" value="Generate!" onclick=myurl()>
+                <input class="btn" type="button" value="Generate!" onclick=myurl()>
             </form>
         </div>
     
         
-        <script>
+        <script type="text/javascript">
             function myurl() {
-                document.getElementById("result").innerHTML = createURL(document.getElementById("input").value);
+                document.getElementById("result").innerHTML = createURL();
+                window.location.href = "Claims.html";
             }
+            
+            function createURL() {
+            var p1 = "https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-US&pageSize=3&query=";
+            var p2 = "&key=AIzaSyC-PX-31ru9Y3O4RCKOwloQplLgJ2LTCl8";
+            
+            var res = document.getElementById("input").value
+            res = res.toLowerCase();
+            res = res.replaceAll("%", "%25");
+            res = res.replaceAll("#", "%23");
+            res = res.replaceAll("^", "%5E");
+            res = res.replaceAll("(", "%28");
+            res = res.replaceAll(")", "%29");
+            res = res.replaceAll("=", "%3D");
+            res = res.replaceAll("+", "%2B");
+            res = res.replaceAll("[", "%5B");
+            res = res.replaceAll("]", "%5D");
+            res = res.replaceAll("{", "%7B");
+            res = res.replaceAll("}", "%7D");
+            res = res.replaceAll("`", "%60");
+            res = res.replaceAll(";", "%3B");
+            res = res.replaceAll("/", "%2F");
+            res = res.replaceAll("\\", "%5C");
+            res = res.replaceAll("|", "%7C");
+            res = res.replaceAll("?", "%3F");
+            res = res.replaceAll(" ", "%20");
+            res = p1 + res + p2;
+            console.log(res);
+            return(res);
+        }
         </script>
 
         <div class="box2">

@@ -12,6 +12,7 @@
 
         <nav class="navbar">
             <a href="Sentence.html" class="link" >Claims</a>
+            <a href="Article.html" class="link" target="blank">Article</a>
             <a href="About.html" class="link" target="blank">About</a>
         </nav>
 
@@ -20,14 +21,13 @@
         </div>
 
         <div>
-            <form method="GET">
+            <form action= '{% ' method="GET">
                 <input class="inputbox" type="text" name="input" id="input" placeholder="Enter a topic..." row=1><br/>
                 <span id="result"></span>
                 <br/>
                 <input class="btn" type="button" value="Generate!" onclick=myurl()>
             </form>
         </div>
-    
         
         <script type="text/javascript">
             function myurl() {

@@ -9,7 +9,7 @@ except ImportError:
 import json
 
 
-#url = ("https://factchecktools.googleapis.com/v1alpha1/claims:search?query=climate%20change&key=AIzaSyC-PX-31ru9Y3O4RCKOwloQplLgJ2LTCl8")
+flatearth = " https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-US&pageSize=3&query=the%20earth%20is%20flat&key=AIzaSyC-PX-31ru9Y3O4RCKOwloQplLgJ2LTCl8"
 
 def get_jsonparsed_data(url):
     response = urlopen(url)
@@ -34,7 +34,9 @@ def main(url_json):
 
 
 
-
+claim = main(flatearth)
+for index, tuple in enumerate(claim):
+	print(claim[index])
 
 
 #

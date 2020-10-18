@@ -33,12 +33,14 @@ a:hover {
     color: #00A79D;
 }
 
-textarea {
-    width: 100%;
+input {
+    width: 60%;
     margin-left: 220px;
     font-family: animosalgt;
     font-size: 30px;
     resize: none;
+    overflow: hidden;
+    outline: none;
 }
 
 .navbar {
@@ -48,9 +50,9 @@ textarea {
     padding-top: 20px;
     height: 50px;
     width: 100%;
-    margin: auto;
+    margin-right: 100px;
     text-align: right;
-    z-index: -1;
+    z-index: 1;
     word-spacing: 1.6em;
     top: 10px;
 }
@@ -59,6 +61,7 @@ textarea {
     position: absolute;
     margin-left:5px;
     top: 20px;
+    z-index: 10;
 }
 
 .teamname {
@@ -68,21 +71,22 @@ textarea {
     font-size: 50px;
     margin-left: 60px;
     top: -35px;
+    z-index: 10;
 }
 
 #header {
-    position: absolute;
+    position: relative;
     font-size: 50px;
     font-family: animosabld;
     color: #211A1E;
     margin-left: 220px;
+    margin-right: -45px;
 }
 
 .box1 {
     position:relative;
     top: 100px;
     line-height:20em;
-    text-align: center;
     background-image: url(background/deskspace.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -91,14 +95,8 @@ textarea {
 }
 
 .inputbox {
-    position:absolute;
-    top: 400px;
-}
-
-.label {
-    font-size: 15px;
-    font-family: animosalgt;
-    color: #211A1E;
+    position:relative;
+    top: -150px;
 }
 
 .paragraph {
@@ -110,7 +108,15 @@ textarea {
 .box2 {
     position:relative;
     width: 70%;
-    top: 350px;
+    text-align: left;
+    margin-top: 50px;
     margin-left: 200px;
     margin-right: 200px;
+}
+
+.block {
+    font-family: animosalgt;
+    float: left;
+    width: 50%;
+    text-align: center;
 }

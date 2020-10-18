@@ -31,9 +31,13 @@
         
         <script type="text/javascript">
             function myurl() {
-                document.getElementById("result").innerHTML = createURL();
+                sessionStorage.setItem("url",document.getElementById("result").innerHTML = createURL());
+                //document.getElementById("result").innerHTML = createURL();
                 window.location.href = "Claims.html";
+                //sessionStorage.setItem("url",document.getElementById("result").innerHTML = createURL());
             }
+
+
             
             function createURL() {
             var p1 = "https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-US&pageSize=3&query=";

@@ -7,9 +7,10 @@ except ImportError:
 
 
 import json
+import sys
 
 
-flatearth = " https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-US&pageSize=3&query=the%20earth%20is%20flat&key=AIzaSyC-PX-31ru9Y3O4RCKOwloQplLgJ2LTCl8"
+#flatearth = " https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-US&pageSize=3&query=the%20earth%20is%20flat&key=AIzaSyC-PX-31ru9Y3O4RCKOwloQplLgJ2LTCl8"
 
 def get_jsonparsed_data(url):
     response = urlopen(url)
@@ -32,11 +33,11 @@ def main(url_json):
     json = get_jsonparsed_data(url_json)
     return get_json_data(json)
 
+main(sys.argv)
 
-
-claim = main(flatearth)
-for index, tuple in enumerate(claim):
-	print(claim[index])
+# claim = main(flatearth)
+# for index, tuple in enumerate(claim):
+# 	print(claim[index])
 
 
 #

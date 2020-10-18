@@ -142,9 +142,12 @@ a:hover {
 
 .block {
     font-family: animosalgt;
+    color: white;
     float: center;
     width: 100%;
     text-align: center;
+    background-color: #404E5C;
+    padding: 10px;
 }
 
 .meet {
@@ -251,3 +254,4 @@ a:hover {
     word-spacing: 1.6em;
     top: 1300px;
 }
+

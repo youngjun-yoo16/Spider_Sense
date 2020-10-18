@@ -28,6 +28,9 @@
         <div class="block">
             <script type="text/javascript">
                 var url = sessionStorage.getItem('url');
+                const spawn = require("child_process").spawn;
+                const pythonProcess = spawn('python',["hellWorld/ok.py", url]);
+
             </script>
             <h3>"Claim One"</h3>
             <p>url</p>

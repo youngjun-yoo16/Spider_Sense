@@ -2,16 +2,16 @@
 <html>
     <head>
         <title>Claim Generator</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         
-        <img class = "logo" src="images/Logo.png" alt="Team logo" width= 50px/>
+        <img class = "logo" src="img/Logo.png" alt="Team logo" width= 50px/>
             <p class="teamname">JASS</p>
 
         <nav class="navbar">
-            <a href="Sentence.html" class="link" >Claims</a>
+            <a href="Claims.html" class="link" >Claims</a>
             <a href="Article.html" class="link" target="blank">Article</a>
             <a href="About.html" class="link" target="blank">About</a>
         </nav>
@@ -31,13 +31,9 @@
         
         <script type="text/javascript">
             function myurl() {
-                sessionStorage.setItem("url",document.getElementById("result").innerHTML = createURL());
-                //document.getElementById("result").innerHTML = createURL();
+                document.getElementById("result").innerHTML = createURL();
                 window.location.href = "Claims.html";
-                //sessionStorage.setItem("url",document.getElementById("result").innerHTML = createURL());
             }
-
-
             
             function createURL() {
             var p1 = "https://factchecktools.googleapis.com/v1alpha1/claims:search?languageCode=en-US&pageSize=3&query=";

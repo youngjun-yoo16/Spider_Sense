@@ -1,0 +1,116 @@
+@font-face {
+    src: url(fonts/Animosa-Regular.otf);
+    font-family: animosareg;
+}
+
+@font-face {
+    src: url(fonts/Animosa-Bold.otf);
+    font-family: animosabld;
+}
+
+@font-face {
+    src: url(fonts/Animosa-Light.otf);
+    font-family: animosalgt;
+}
+
+@font-face {
+    src: url(fonts/UnicaOne-Regular.ttf);
+    font-family: unica;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: #404E5C;
+    font-size: 25px;
+    z-index: 5;
+}
+
+a:hover {
+    color: #00A79D;
+}
+
+textarea {
+    width: 100%;
+    margin-left: 220px;
+    font-family: animosalgt;
+    font-size: 30px;
+    resize: none;
+}
+
+.navbar {
+    position:absolute;
+    font-family: animosalgt;
+    background-color: #F7F4EA;
+    padding-top: 20px;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    z-index: -1;
+    word-spacing: 1.6em;
+    top: 10px;
+}
+
+.logo {
+    position: absolute;
+    margin-left:5px;
+    top: 20px;
+}
+
+.teamname {
+    position: absolute;
+    font-family: unica;
+    color: 404E5C;
+    font-size: 50px;
+    margin-left: 60px;
+    top: -35px;
+}
+
+#header {
+    position: absolute;
+    font-size: 50px;
+    font-family: animosabld;
+    color: #211A1E;
+    margin-left: 220px;
+}
+
+.box1 {
+    position:relative;
+    top: 100px;
+    line-height:20em;
+    text-align: center;
+    background-image: url(background/deskspace.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    
+}
+
+.inputbox {
+    position:absolute;
+    top: 400px;
+}
+
+.label {
+    font-size: 15px;
+    font-family: animosalgt;
+    color: #211A1E;
+}
+
+.paragraph {
+    font-size: 25px;
+    font-family: animosareg;
+}
+
+
+.box2 {
+    position:relative;
+    width: 70%;
+    top: 350px;
+    margin-left: 200px;
+    margin-right: 200px;
+}

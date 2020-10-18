@@ -9,27 +9,43 @@ except ImportError:
 import json
 
 
-url = ("https://factchecktools.googleapis.com/v1alpha1/claims:search?query=trump&key=AIzaSyC-PX-31ru9Y3O4RCKOwloQplLgJ2LTCl8")
+#url = ("https://factchecktools.googleapis.com/v1alpha1/claims:search?query=climate%20change&key=AIzaSyC-PX-31ru9Y3O4RCKOwloQplLgJ2LTCl8")
 
 def get_jsonparsed_data(url):
     response = urlopen(url)
     data = response.read().decode("utf-8")
     return json.loads(data)
 
-info = []
-json = get_jsonparsed_data(url)
-for claim in json["claims"]:
-    for line in claim["claimReview"]:
-        info.append(line['textualRating'])
+def get_json_data(json):
+    for claim in json["claims"]:
+        claimu = claim['text']
+        claiment = claim['claimant']
+        for line in claim["claimReview"]:
+            title = line['title']
+            j_url = line['url']
+            rating = line['textualRating']
+    return claimu, claiment, title, j_url, rating
 
-        # for thing in line['textualRating']:
-        #     print(thing)
-        # print(k['claimReview']['textualRating'])
-        # # #print(v['address']['addressLine2'])
-        # # print ('')
-falsec = 0
-truec = 0
-print(info)
-somethin = []
-false = ["False", "Falso", "Distorts the Facts", "Misleading", "Mostly False", "Pants on Fire"]
-true = ["True"]
+
+
+def main(url_json):
+    json = get_jsonparsed_data(url_json)
+    get_json_data(json)
+
+
+
+
+
+
+#
+#         # for thing in line['textualRating']:
+#         #     print(thing)
+#         # print(k['claimReview']['textualRating'])
+#         # # #print(v['address']['addressLine2'])
+#         # # print ('')
+# falsec = 0
+# truec = 0
+# #print(info)
+# somethin = []
+# false = ["False", "Falso", "Distorts the Facts", "Misleading", "Mostly False", "Pants on Fire"]
+# true = ["True"]

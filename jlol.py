@@ -11,8 +11,15 @@ from textblob.sentiments import NaiveBayesAnalyzer
 import spacy
 nlp = spacy.load("en_core_web_sm")
 spacy.prefer_gpu()
-from fuzzywuzzy import fuzz
-print(fuzz.partial_ratio("Humans are causing global warming", "No, Climate Change is not Made Up"))
+from negspacy.negation import Negex
+negex = Negex(nlp, language = "en_clinical_sensitive")
+
+#ent_types=["PERSON","ORG"]
+nlp.add_pipe(negex, last=True)
+doc = nlp("The U.S. has reduced carbon dioxide emissions more than the countries who signed the Paris Climate Agreement")
+for e in doc.ents:
+	print(e.text, e._.negex)
+
 #
 # doc1 = nlp("sky is bad")
 # doc2 = nlp("sky is good")

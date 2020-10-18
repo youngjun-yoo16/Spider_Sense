@@ -194,27 +194,32 @@ a:hover {
 .juname {
     font-family: animosabld;
     position:absolute;
-    top: 1170px;
+    top: 760px;
     margin-left: 450px;
 }
 
 .judescription {
     font-family: animosalgt;
     position: absolute;
-    top: 1210px;
+    top: 800px;
     margin-left: 450px;
 }
 
 .adname {
     font-family: animosabld;
     position:absolute;
-    top: 1375px;
+    top: 970px;
     margin-left: 450px;
 }
 
 .addescription {
     font-family: animosalgt;
     position: absolute;
-    top: 1415px;
+    top: 1010px;
     margin-left: 450px;
+}
+
+.block2 {
+    float: left;
+    width: 50%;
 }

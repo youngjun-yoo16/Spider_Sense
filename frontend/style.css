@@ -181,13 +181,41 @@ a:hover {
 .suname {
     font-family: animosabld;
     position:absolute;
-    top: 1000px;
+    top: 970px;
     margin-left: 450px;
 }
 
 .sudescription {
     font-family: animosalgt;
     position:absolute;
-    top: 1040px;
+    top: 1010px;
+    margin-left: 450px;
+}
+
+.juname {
+    font-family: animosabld;
+    position:absolute;
+    top: 1170px;
+    margin-left: 450px;
+}
+
+.judescription {
+    font-family: animosalgt;
+    position: absolute;
+    top: 1210px;
+    margin-left: 450px;
+}
+
+.adname {
+    font-family: animosabld;
+    position:absolute;
+    top: 1375px;
+    margin-left: 450px;
+}
+
+.addescription {
+    font-family: animosalgt;
+    position: absolute;
+    top: 1415px;
     margin-left: 450px;
 }

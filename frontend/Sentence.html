@@ -11,21 +11,20 @@
             <p class="teamname">JASS</p>
 
         <nav class="navbar">
-            <a href="Sentence.html" class="link" >Sentence</a>
-            <a href="Article.html" class="link" >Article</a>
+            <a href="Sentence.html" class="link" >Claims</a>
             <a href="About.html" class="link" target="blank">About</a>
         </nav>
 
         <div class="box1">
-            <h1 id= "header">Sentence Checker</h1>
+            <h1 id= "header">Claim Generator</h1>
         </div>
 
-        <div class="inputbox">
+        <div>
             <form method="GET">
-                <input type="text" name="input" id="input" placeholder="Fact or fiction?" row=1><br/>
+                <input class="inputbox" type="text" name="input" id="input" placeholder="Enter a topic..." row=1><br/>
                 <span id="result"></span>
                 <br/>
-                <input type="button" value="Fact Check!" onclick=myurl()>
+                <input class = "btn" type="button" value="Generate!" onclick=myurl()>
             </form>
         </div>
     
@@ -42,20 +41,26 @@
             </p>
         </div>
 
-        <div class="box2">
-            <p class = "paragraph">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur tenetur ratione error repudiandae magnam. Fugit adipisci perspiciatis nihil culpa saepe assumenda dolorem excepturi, iste aliquam cupiditate alias amet itaque quisquam.
-            </p>
+        <div class="box3">
+            <h2 class="head2">Claims</h2>
+        </div>
+
+        <p class="initclaims">There are currently no claims.</p>
+
+        <div class="block">
+            <h3>"Claim One"</h3>
+            <p>url</p>
         </div>
 
         <div class="block">
-            <h3>Article 1</h3>
-            <p>fillerfillerfillerfillerfillerfillerfiller</p>
+            <h3>"Claim Two"</h3>
+            <p>url</p>
         </div>
 
         <div class="block">
-            <h3>Article 2</h3>
-            <p>fillerfillerfillerfillerfillerfillerfiller</p>
+            <h3>"Claim Three"</h3>
+            <p>url</p>
         </div>
+
     </body>
 </html>
